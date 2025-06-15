@@ -6,13 +6,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
+repo init -u https://github.com/crdroidandroid/android -b 13.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Dityay/local_manifests -b witaqua .repo/local_manifests
+git clone https://github.com/Dityay/local_manifests -b lineage-20 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
