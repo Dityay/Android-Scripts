@@ -6,7 +6,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/crdroidandroid/android -b 13.0 --git-lfs
+repo init -u https://github.com/crdroidandroid/android.git -b 13.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -23,9 +23,6 @@ echo "============="
 echo "Sync success"
 echo "============="
 
-# Signing keys
-git clone https://github.com/AbuRider/vendor_signing.git vendor/lineage/signing/keys
-
 # Export
 export BUILD_USERNAME=deltarune
 export BUILD_HOSTNAME=crave
@@ -36,5 +33,5 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 
 
 echo "======= Export Done ======"
-brunch earth
-#lunch lineage_earth-bp1a-userdebug && mka derp
+lunch lineage_earth-userdebug
+m bacon
