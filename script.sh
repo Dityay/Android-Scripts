@@ -69,11 +69,11 @@ git clone https://github.com/Dityay/proprietary_vendor_xiaomi_earth -b lineage-2
 
 git clone https://github.com/mt6768-dev/android_kernel_xiaomi_earth -b lineage-22.2 kernel/xiaomi/earth || { echo "Failed to clone kernel tree"; }
 
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-20 hardware/xiaomi || { echo "Failed to clone xiaomi stuffs"; }
 
-git clone https://github.com/LineageOS/android_hardware_mediatek.git hardware/mediatek || { echo "Failed to clone mediatek hardwares"; }
+git clone https://github.com/LineageOS/android_hardware_mediatek.git -b lineage-20 hardware/mediatek || { echo "Failed to clone mediatek hardwares"; }
 
-git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git device/mediatek/sepolicy_vndr || { echo "Failed to sepolicy_vndr"; }
+git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-20 device/mediatek/sepolicy_vndr || { echo "Failed to sepolicy_vndr"; }
 
 /opt/crave/resync.sh
 
